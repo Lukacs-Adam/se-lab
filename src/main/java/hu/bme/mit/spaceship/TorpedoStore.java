@@ -42,6 +42,7 @@ public class TorpedoStore {
 
     if (r >= FAILURE_RATE) {
       // successful firing
+      // kivonás helyett, előjel váltás volt itt, így hibás volt a torpedó számítás
       this.torpedoCount -= numberOfTorpedos;
       success = true;
     } else {
